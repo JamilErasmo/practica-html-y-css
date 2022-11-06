@@ -1,0 +1,89 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: rgba(215, 211, 211, 0.3);
+	font-family: 'Poppins', sans-serif;
+}
+.contenedor{
+	width: 95%;
+	max-width: 1124px;
+	margin: 0 auto;
+
+	display: grid;      //quitarlo /
+	grid-gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, auto);
+
+	grid-template-areas: "header  header"
+						 "slider slider"
+						 "adopta1 adopta2"
+						 "doctor doctor"	
+						 "sponsor sponsor"
+						 "footer footer";	
+}
+
+.contenedor .cabeceraPrincipal{
+	grid-area: header;
+	background-color: #ccc;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.contenedor .cabeceraPrincipal .logotipo{
+	padding: 10px 40px;
+}
+
+/* -------------------------------------*/
+/*            menu principal              */
+/* -------------------------------------*/
+.contenedor .cabeceraPrincipal{
+	grid-area: header;
+	background-color: #D7263D;
+}
+
+.contenedor .menuPrincipal{
+	grid-area: nav;
+	background-color: #D7263D;
+}
+
+.contenedor .contenido{
+	grid-area: contenido;
+	background-color: #ccc;
+}
+/*------------------------------------------------------------*/
+/*                      slider principal                      */
+/*------------------------------------------------------------*/
+.contenedor .sidebar{
+	grid-area: sidebar;
+	background-color: #ccc;
+}
+
+.contenedor .noticia1{
+	grid-area: noticia1;
+	background-color: #B2AEE7;
+}
+
+.contenedor .noticia2{
+	grid-area: noticia2;
+	background-color: #ccc;
+}
+
+.contenedor .piePagina{
+	grid-area: footer;
+	background-color: #ccc;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+  .contenedor{
+  grid-template-areas: "header header header"
+						"nav nav nav"
+						"contenido contenido sidebar"
+						"noticia1 noticia2 sidebar"
+						"footer footer footer";
+	}
+}
