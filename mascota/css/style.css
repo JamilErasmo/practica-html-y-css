@@ -88,6 +88,20 @@ body{
 }
 
 /*  Contenido main */
+
+main{
+	grid-area: slider;
+	margin: 0 auto;
+	width: 90%;
+	padding: 2em 0;
+}
+main h2{
+	color: ff;
+	font-size: 2em;
+}
+
+---------------------------
+
 main{
 	grid-area: slider;
 	margin: 0 auto;
@@ -240,6 +254,7 @@ main p{
 	border-radius: 5px;
 }
 
+
 .centrado{
 	text-align: center;
 }
@@ -260,6 +275,7 @@ main p{
 }
 
 .boton:hover{
+
 	background-color: #3C8D40;
 }
 

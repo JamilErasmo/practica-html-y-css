@@ -17,15 +17,29 @@
 		<section class="logotipo"><img src="../images/logotipoPet.png"></section>
 		<nav class="menuPrincipal">
 			<a href="../">Inicio</a>
-			<a href="#">Servicios</a>
-			<a href="#">Productos</a>
-			<a href="#">Adopción</a>
-			<a href="#">Contactos</a>
+			<a href="servicios.php">Servicios</a>
+			<a href="#">Perritos</a>
+			<a href="#">Gatitos</a>
+			<a href="#">Requisitos</a>
+			<a href="adopcion.php">Adopcion</a>
+
 		</nav>
 	</header>
 	<main>
 		<h2>Servicos de municipio de Loja</h2>
 		<p>Snares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat trade</p>
+
+		<h2>Descripcion</h2>
+		<p>La adopción de animales es el proceso de tomar la responsabilidad de un animal que un dueño previamente ha abandonado o dejado en un refugio de animales.
+				Existe un gran número de lugares donde se puede adoptar, tanto lugares físicos, como los refugios, como por internet, estos sitios web.</p>
+
+
+		<h2>Consejos para la adopción de mascotas</h2>
+		<p>
+			🐾 Revisa tus motivaciones para adoptar una mascota<br>
+			🐾 Adecua tu hogar para recibir a tu nueva mascota<br>
+			🐾 Evalúa el tiempo y los recursos que puedes dedicarle<br>
+			🐾 ¿Dónde adoptar mascotas?</p>
 	</main>
 	<section class="sponsor">
 		<h3 class="colorAzul">Sponsor</h3>
