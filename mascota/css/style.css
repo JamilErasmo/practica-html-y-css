@@ -11,79 +11,258 @@ body{
 	max-width: 1124px;
 	margin: 0 auto;
 
-	display: grid;      //quitarlo /
-	grid-gap: 10px;
+	display: grid;
+	grid-gap: 0px;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(6, auto);
 
 	grid-template-areas: "header  header"
 						 "slider slider"
+						 "titulo titulo" 
 						 "adopta1 adopta2"
 						 "doctor doctor"	
 						 "sponsor sponsor"
 						 "footer footer";	
 }
 
+/*                Header       */
+
 .contenedor .cabeceraPrincipal{
 	grid-area: header;
-	background-color: #ccc;
+	background-color: #D7263D;
 	display: flex;
 	justify-content: space-between;
-
 }
 
 .contenedor .cabeceraPrincipal .logotipo{
 	padding: 10px 40px;
 }
 
-/* -------------------------------------*/
-/*            menu principal              */
-/* -------------------------------------*/
-.contenedor .cabeceraPrincipal{
-	grid-area: header;
-	background-color: #D7263D;
+.contenedor .cabeceraPrincipal nav{
+	display: flex;
+	align-items: center;
 }
 
-.contenedor .menuPrincipal{
-	grid-area: nav;
-	background-color: #D7263D;
+.contenedor .cabeceraPrincipal nav a{
+	text-decoration: none;
+	padding: 0 20px;
+	color: #02182B;
 }
 
-.contenedor .contenido{
-	grid-area: contenido;
-	background-color: #ccc;
-}
-/*------------------------------------------------------------*/
-/*                      slider principal                      */
-/*------------------------------------------------------------*/
-.contenedor .sidebar{
-	grid-area: sidebar;
-	background-color: #ccc;
+.contenedor .cabeceraPrincipal nav a:hover{ /* El hover es para hacer el cuadrito en negro*/
+	background-color: #02182B;
+	color: #fff;
 }
 
-.contenedor .noticia1{
-	grid-area: noticia1;
-	background-color: #B2AEE7;
+/*  slider  */
+
+.contenedor .sliderPrincipal{
+	grid-area: slider;
+	background-color: #000;
 }
 
-.contenedor .noticia2{
-	grid-area: noticia2;
-	background-color: #ccc;
+.contenedor .sliderPrincipal .cuadro{
+	position: absolute;
+	background-color: #ff;
+	color: black;
+	opacity: 50%;
+	width: 50%;
+	height: 35%;
+	margin: 350px 80px 100px 100px;
 }
+
+.contenedor .sliderPrincipal .cuadro h2{
+	text-align: center;
+}
+
+.contenedor .sliderPrincipal .cuadro button{
+	padding: 5px 10px;
+	background-color: #fff;
+	border-color: #B5EF8A;
+	color: #000;
+	margin: 10px 20px 10px 350px;
+}
+
+.contenedor .sliderPrincipal img{
+	width: 100%;
+}
+
+/*  Contenido main */
+main{
+	grid-area: slider;
+	margin: 0 auto;
+	width: 90%;
+	padding: 2em 0;
+}
+
+main h2{
+	color: #817E9F;
+	font-size: 2em;
+}
+
+main p{
+	color: #605B5B;
+	font-size: 1em;
+	line-height: 28px;
+}
+
+.contenedor .titulo{
+	grid-area: titulo;
+	background-color: #fff;
+	text-align: center;
+}
+
+.contenedor .titulo h2{
+	color: #9C9B9B;
+	font-size: 40px;
+	font-weight: 300;
+	padding:  30px 0;
+}
+
+
+.contenedor .adopcion1{
+	grid-area: adopta1;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+}
+
+.contenedor .adopcion1 .cardog h3{
+	font-size: 25px;
+	color: #817E9F;
+	text-transform: uppercase;
+	padding: 5px 10px;
+}
+
+.contenedor .adopcion1 .cardog p{
+	padding: 5px 10px;
+	color: #605B5B;
+}
+
+.contenedor .adopcion1 .cardog button{
+	padding: 5px 10px;
+	margin: 10px 20px 10px 180px;
+}
+
+.contenedor .adopcion2{
+	grid-area: adopta2;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 40px;
+}
+
+.contenedor .adopcion2 .cardog2 h3{
+	font-size: 25px;
+	color: #817E9F;
+	text-transform: uppercase;
+	padding: 5px 10px;
+}
+
+.contenedor .adopcion2 .cardog2 p{
+	padding: 5px 10px;
+	color: #605B5B;
+}
+
+.contenedor .adopcion2 .cardog2 button{
+	padding: 5px 10px;
+	margin: 10px 20px 10px 180px;
+}
+
+.contenedor .adopcion2 .cardog3 p{
+	padding: 5px 10px;
+	color: #605B5B;
+}
+
+.contenedor .adopcion2 .cardog3 button{
+	padding: 5px 10px;
+	margin: 10px 20px 10px 180px;
+}
+
+.contenedor .sponsor{
+	grid-area: sponsor;
+	background-color: #68C5DB;
+	display: flex;
+	justify-content: center;
+}
+
+.contenedor .sponsor .logoDog{
+	padding: 70px 40px;
+}
+
+.contenedor .sponsor .logoUtpl{
+	padding: 50px 40px;
+}
+
+/* Footer */
 
 .contenedor .piePagina{
 	grid-area: footer;
-	background-color: #ccc;
+	background-color: #D7263D;
+	color: #000;
+	display: flex;
+	justify-content: space-between;
 }
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: red;
-  }
-  .contenedor{
-  grid-template-areas: "header header header"
-						"nav nav nav"
-						"contenido contenido sidebar"
-						"noticia1 noticia2 sidebar"
-						"footer footer footer";
-	}
+
+.contenedor .derechos{
+	padding: 30px 50px;
+}
+
+.contenedor .piePagina nav{
+	display: flex;
+	align-items: center;
+}
+
+.contenedor .piePagina .redesSociales a{
+	text-decoration: none;
+	padding: 0 20px;
+	color: #000;
+}
+
+.contenedor .piePagina .redesSociales a:hover{
+	
+}
+
+/*  Adopcion formulario */
+
+.grupoInput{
+	padding: 10px;
+}
+
+.grupoInput label{
+	display: block;
+}
+
+.grupInput input[type = text] , .grupInput input[type = email], .grupInput input[type = number], .grupInput input[type = date]{
+	width: 90%;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.centrado{
+	text-align: center;
+}
+
+.boton{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.boton:hover{
+	background-color: #3C8D40;
+}
+
+.alerta{
+	color: red;
 }
