@@ -29,7 +29,7 @@ body{
 
 .contenedor .cabeceraPrincipal{
 	grid-area: header;
-	background-color: #D7263D;
+	background-color: #073A70;
 	display: flex;
 	justify-content: space-between;
 }
@@ -122,7 +122,7 @@ main p{
 
 .contenedor .titulo{
 	grid-area: titulo;
-	background-color: #fff;
+	background-color: #46AF8D;
 	text-align: center;
 }
 
@@ -131,6 +131,7 @@ main p{
 	font-size: 40px;
 	font-weight: 300;
 	padding:  30px 0;
+
 }
 
 
@@ -196,7 +197,7 @@ main p{
 
 .contenedor .sponsor{
 	grid-area: sponsor;
-	background-color: #68C5DB;
+	background-color: #fff;
 	display: flex;
 	justify-content: center;
 }
@@ -206,14 +207,14 @@ main p{
 }
 
 .contenedor .sponsor .logoUtpl{
-	padding: 50px 40px;
+	padding: 20px 20px;
 }
 
 /* Footer */
 
 .contenedor .piePagina{
 	grid-area: footer;
-	background-color: #D7263D;
+	background-color: #37404A;
 	color: #000;
 	display: flex;
 	justify-content: space-between;

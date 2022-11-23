@@ -19,36 +19,44 @@
 			<a href="#">Inicio</a>
 			<a href="servicios.php">Servicios</a>
 			<a href="#">Productos</a>
-			<a href="adopcion.php">Adopción</a>
-			<a href="simulador.php">Simulador</a>
+			<a href="internas/adopcion.php">Adopción</a>
+			<a href="internas/simulador.php">Simulador</a>
 		</nav>
 	</header>
 	<main>
-		<h2>Formulario de adopcion</h2>
-		<form method="post" action="procesar.php">
+		<h2>CALCULADORA DEL IMC CANINO</h2>
+		<form method="post" action="calcular.php">
 			<div class="grupInput">
 				<label form="nombres">Nombre <span class="alerta">*</span></label>
 				<input type="text" name="nombres" id="nombres" placeholder="Ingrese sus nombres" required/>
 			</div>
 			<div class="grupInput">
-				<label form="apellidos">Apellido <span class="alerta">*</span></label>
-				<input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos" required>
+				<label form="apellidos"> Elija el tipo Calculo<span class="alerta">*</span></label>
+				<select name= "select">
+					<option name= "IMC" required>IMC</option>
+					<option name = "GM" required>Grasa corporal en machos</option>
+					<option name= "GH" required>Grasa corporal en hembras</option>
+				</select>
 			</div>
 			<div class="grupInput">
-				<label form="correo">Correo <span class="alerta">*</span></label>
-				<input type="email" name="correo" id="correo" placeholder="Ingrese su correo" required>
+				<label form="HSH">Altura Hombro <span class="alerta">*</span></label>
+				<input type="number" name="HSH" id="HSH" placeholder="Ingrese altura hombro" required>
 			</div>
 			<div class="grupInput">
-				<label form="telefono">Telefono</label>
-				<input type="number" name="telefono" id="telefono" placeholder="Ingrese sus telefono">
+				<label form="OP">Distancia occipucio a la base de la cola</label>
+				<input type="number" name="OP" id="OP" placeholder="Ingrese distancia cola" required>
 			</div>
 			<div class="grupInput">
-				<label form="direccion">Dirección</label>
-				<input type="text" name="direccion" id="direccion" placeholder="Ingrese sus direccion">
+				<label form="CP">Circunferencia pélvica (cm)</label>
+				<input type="number" name="CP" id="CP" placeholder="Ingrese circufenrencia pelvica" required>
 			</div>
 			<div class="grupInput">
-				<label form="fecha">Fecha de nacimiento</label>
-				<input type="date" name="fecha" id="fecha" placeholder="Ingrese sus fecha">
+				<label form="HS">HS (cm)</label>
+				<input type="number" name="HS" id="HS" placeholder="Ingrese HS" required>
+			</div>
+			<div class="grupInput">
+				<label form="PC">Peso corporal</label>
+				<input type="number" name="PC" id="PC" placeholder="Ingrese peso corporal" required>
 			</div>
 			<div class="centrado">
 				<button class="boton" type="submit">Guardar</button>

@@ -14,14 +14,13 @@
 <body>
 <div class="contenedor">
 	<header class="cabeceraPrincipal">
-		<section class="logotipo"><img src="../images/logotipoPet.png"></section>
+		<section class="logotipo"><img src="../imagenes/logotipoPet.png"></section>
 		<nav class="menuPrincipal">
 			<a href="../">Inicio</a>
-			<a href="servicios.php">Servicios</a>
-			<a href="#">Perritos</a>
-			<a href="#">Gatitos</a>
-			<a href="#">Requisitos</a>
-			<a href="adopcion.php">Adopcion</a>
+			<a href="#">Servicios</a>
+			<a href="#">Productos</a>
+			<a href="internas/adopcion.php">Adopción</a>
+			<a href="simulador.php">Simulador</a>
 
 		</nav>
 	</header>
@@ -37,8 +36,11 @@
 		<h2>Consejos para la adopción de mascotas</h2>
 		<p>
 			🐾 Revisa tus motivaciones para adoptar una mascota<br>
+			<br>
 			🐾 Adecua tu hogar para recibir a tu nueva mascota<br>
+			<br>
 			🐾 Evalúa el tiempo y los recursos que puedes dedicarle<br>
+			<br>
 			🐾 ¿Dónde adoptar mascotas?</p>
 	</main>
 	<section class="sponsor">
