@@ -1,9 +1,9 @@
 <?php 
 
-include("../dl/config.php");
-  include("../dl/class_mysqli.php");
-  $miconexion=new class_mysqli();
-  $miconexion=->conectar('DBHOST','DBUSER','DBPASS','DBNAME');
+include("../dll/config.php");
+  include("../dll/class_mysql.php");
+  $miconexion=new class_mysql();
+  $miconexion->conectar(DBHOST,DBUSER,DBPASS,DBNAME);
 
 $nombres=$_POST['nombres'];
 	$apellidos=$_POST['apellidos'];
@@ -24,5 +24,5 @@ $nombres=$_POST['nombres'];
    }else{
     echo '<script>alerta("sentencia ejecutada..");</script>';
     echo "<script>location.href'../'</script>";
-   }
+}
 ?>

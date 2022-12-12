@@ -35,20 +35,20 @@
 				<input type="text" name="apellidos" id="apellidos" placeholder="Ingrese sus apellidos" required>
 			</div>
 			<div class="grupInput">
-				<label form="correo">Correo <span class="alerta">*</span></label>
-				<input type="email" name="correo" id="correo" placeholder="Ingrese su correo" required>
+				<label form="direccion">Dirección<span class="alerta">*</span></label>
+				<input type="text" name="direccion" id="direccion" placeholder="Ingrese sus direccion" required>
 			</div>
 			<div class="grupInput">
-				<label form="telefono">Telefono</label>
-				<input type="number" name="telefono" id="telefono" placeholder="Ingrese sus telefono">
+				<label form="correo">Correo<span class="alerta">*</span></label>
+				<input type="text" name="correo" id="correo" placeholder="Ingrese su correo" required>
 			</div>
 			<div class="grupInput">
-				<label form="direccion">Dirección</label>
-				<input type="text" name="direccion" id="direccion" placeholder="Ingrese sus direccion">
+				<label form="direccion">Cedula<span class="alerta">*</span></label>
+				<input type="number" name="cedula" id="cedula" placeholder="Ingrese su cedula" required>
 			</div>
 			<div class="grupInput">
-				<label form="fecha">Fecha de nacimiento</label>
-				<input type="date" name="fecha" id="fecha" placeholder="Ingrese sus fecha">
+				<label form="Mascota">Mascota</label>
+				<input type="text" name="mascota" id="mascota" placeholder="Ingrese su nombre" required>
 			</div>
 			<div class="centrado">
 				<button class="boton" type="submit">Guardar</button>
